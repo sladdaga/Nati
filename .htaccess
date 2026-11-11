@@ -1,0 +1,2 @@
+# Carpeta interna que no debe ser publica
+RedirectMatch 404 ^/material(/|$)
