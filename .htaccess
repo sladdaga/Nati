@@ -1,2 +1,12 @@
 # Carpeta interna que no debe ser publica
 RedirectMatch 404 ^/material(/|$)
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://abacus.jasoncameron.dev; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+</IfModule>
