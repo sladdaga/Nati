@@ -45,7 +45,7 @@
           <h1>Elecciones <span>COM.It.Es. 2026</span></h1>
           <span class="hero-v2-flag" aria-hidden="true"></span>
           <p class="lead">Conocé nuestra lista, nuestras propuestas y la información necesaria para participar de la elección en la circunscripción de Mar del Plata.</p>
-          <div class="hero-v2-dates"><span><strong>4 nov. 2026</strong> Cierre de inscripción</span><span><strong>4 dic. 2026</strong> Recepción del voto</span></div>
+          <div class="hero-v2-dates"><span><strong>4 dic. 2026</strong> Recepción del voto</span></div>
           <div class="button-row">
             <a class="button button-light" href="#candidatos">Conocé nuestra lista <span aria-hidden="true">→</span></a>
             <a class="button button-outline-light" href="#como-inscribirse">Cómo votar <span aria-hidden="true">↓</span></a>
@@ -232,20 +232,42 @@
     <section class="section registration" id="como-inscribirse">
       <div class="container">
         <p class="eyebrow">Información práctica</p><h2>¿Cómo se vota?</h2>
-        <p class="section-intro">Se acercan las elecciones del COM.IT.ES. y ya están llegando los sobres para poder votar. Seguí estos pasos:</p>
-        <ol class="flow" aria-label="¿Cómo se vota?">
-          <li><span class="flow-num">1</span><h3>Elegí tu opción</h3><p>Buscá en la boleta la lista que quieras votar.</p></li>
-          <li><span class="flow-num">2</span><h3>Marcá la lista</h3><p>Marcá con una cruz (X) en el logo de la lista.</p></li>
-          <li><span class="flow-num">3</span><h3>Marcá los candidatos</h3><p>Marcá con una cruz (X) a los candidatos de la lista: podés marcar hasta 4 personas.</p></li>
-          <li><span class="flow-num">4</span><h3>Doblá y guardá la boleta</h3><p>Guardá cada cosa en su sobre, como se indica a continuación.</p></li>
-        </ol>
-        <h3 class="flow-subtitle">Qué va en cada sobre</h3>
-        <ol class="flow flow-pack">
-          <li><span class="flow-icon" aria-hidden="true">🗳️</span><h3>Sobre blanco</h3><p>Dentro va la boleta electoral.</p></li>
-          <li><span class="flow-icon" aria-hidden="true">✉️</span><h3>Sobre con franqueo</h3><p>Dentro van el sobre blanco y el talón con tus datos.</p></li>
-          <li class="flow-end"><span class="flow-icon" aria-hidden="true">📮</span><h3>Enviá tu voto</h3><p>Despachalo por correo: debe llegar hasta el 4 de diciembre de 2026.</p></li>
-        </ol>
-        <div class="flow-notes"><h3>Para tener en cuenta</h3><ul><li>No marques más opciones de las permitidas: solo una lista, y hasta 4 candidatos de esa misma lista.</li><li>Usá birome azul o negra para marcar las opciones.</li><li>Respetá lo que va en cada uno de los sobres.</li></ul></div>
+        <p class="section-intro">Se acercan las elecciones del COM.IT.ES. y ya están llegando los sobres para poder votar. Recorré el diagrama paso a paso y practicá con una boleta de ejemplo.</p>
+        <div class="guide" id="guia-voto" data-max-msg="Solo podés marcar hasta 4 candidatos." data-captions="Empezás con la boleta ya marcada.|La boleta va dentro del sobre blanco.|Sumá el talón con tus datos.|Todo va dentro del sobre con franqueo. ¡Listo para enviar!" data-checks-ok="¡Perfecto! Ya podés cerrar los sobres." data-lbl-step="Paso">
+          <ol class="guide-nodes" aria-label="¿Cómo se vota?"><li><button type="button" class="guide-node" data-go="0"><span class="guide-node-num">1</span><span class="guide-node-label">Elegí la lista</span></button></li><li><button type="button" class="guide-node" data-go="1"><span class="guide-node-num">2</span><span class="guide-node-label">Marcá el logo</span></button></li><li><button type="button" class="guide-node" data-go="2"><span class="guide-node-num">3</span><span class="guide-node-label">Marcá candidatos</span></button></li><li><button type="button" class="guide-node" data-go="3"><span class="guide-node-num">4</span><span class="guide-node-label">Revisá</span></button></li><li><button type="button" class="guide-node" data-go="4"><span class="guide-node-num">5</span><span class="guide-node-label">Armá los sobres</span></button></li><li><button type="button" class="guide-node" data-go="5"><span class="guide-node-num">6</span><span class="guide-node-label">Enviá tu voto</span></button></li></ol>
+          <div class="guide-stage">
+            <div class="guide-panels">
+              <section class="guide-panel" data-focus="list" data-view="ballot"><h3>Elegí tu opción</h3><p>Buscá en la boleta la lista que quieras votar.</p><p class="guide-hint">La boleta de la derecha es solo un ejemplo ilustrativo.</p></section>
+              <section class="guide-panel" data-focus="logo" data-view="ballot"><h3>Marcá el logo de la lista</h3><p>Marcá con una cruz (X) en el logo de la lista.</p><p class="guide-hint">Probá: tocá el logo de la boleta para marcarlo con una X.</p></section>
+              <section class="guide-panel" data-focus="cands" data-view="ballot"><h3>Marcá a los candidatos</h3><p>Marcá con una cruz (X) a los candidatos de la lista. Podés marcar hasta 4 personas.</p><p class="guide-hint">Probá: tocá hasta 4 candidatos de la misma lista.</p></section>
+              <section class="guide-panel" data-focus="" data-view="ballot"><h3>Revisá antes de cerrar</h3><p>Para tener en cuenta, tildá cada punto:</p><ul class="guide-checks"><li><label><input type="checkbox" class="guide-check"> Marqué solo una lista (y no más opciones de las permitidas).</label></li><li><label><input type="checkbox" class="guide-check"> Marqué hasta 4 candidatos, todos de la misma lista.</label></li><li><label><input type="checkbox" class="guide-check"> Usé birome azul o negra.</label></li></ul><p class="guide-ok" role="status" aria-live="polite"></p></section>
+              <section class="guide-panel" data-focus="" data-view="env"><h3>Doblá la boleta y guardala</h3><p>Guardá cada cosa en su sobre, de la siguiente manera:</p><ul class="guide-list"><li><strong>Sobre blanco:</strong> la boleta electoral.</li><li><strong>Sobre con franqueo:</strong> el sobre blanco y el talón con tus datos.</li></ul></section>
+              <section class="guide-panel" data-focus="" data-view="mail"><h3>Enviá tu voto</h3><p>Despachá el sobre con franqueo por correo.</p></section>
+            </div>
+            <div class="guide-visuals">
+              <div class="guide-visual" data-for="ballot">
+                <div class="ballot"><p class="ballot-tag">Boleta de ejemplo · ilustrativa</p>
+                  <button type="button" class="ballot-logo" aria-pressed="false" aria-label="Logo de la lista"><span class="ballot-logo-text">LISTA</span><span class="ballot-x" aria-hidden="true">✕</span></button>
+                  <ul class="ballot-cands"><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 1</button></li><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 2</button></li><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 3</button></li><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 4</button></li><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 5</button></li><li><button type="button" class="cand" aria-pressed="false"><span class="cand-box" aria-hidden="true"></span>Candidato 6</button></li></ul>
+                  <p class="ballot-msg" role="status" aria-live="polite"></p>
+                  <button type="button" class="guide-reset">Reiniciar práctica</button>
+                </div>
+              </div>
+              <div class="guide-visual" data-for="env">
+                <div class="env" data-stage="0">
+                  <div class="env-outer"><span class="env-label">Sobre con franqueo</span>
+                    <div class="env-inner"><span class="env-label">Sobre blanco</span><div class="env-paper">Boleta</div></div>
+                    <div class="env-stub">Talón con tus datos</div>
+                  </div>
+                  <p class="env-caption" role="status" aria-live="polite"></p>
+                  <button type="button" class="env-btn">Armar el sobre</button>
+                </div>
+              </div>
+              <div class="guide-visual" data-for="mail"><div class="mail"><span class="mail-icon" aria-hidden="true">📮</span><p class="mail-date">Hasta el 4 de diciembre de 2026</p><p>El sobre debe llegar antes de esa fecha: no esperes al último momento.</p></div></div>
+            </div>
+          </div>
+          <div class="guide-controls"><button type="button" class="button button-secondary guide-prev">← Anterior</button><span class="guide-progress" aria-live="polite"></span><button type="button" class="button button-primary guide-next">Siguiente →</button></div>
+        </div>
         <div class="button-row"><a class="button button-primary" href="https://consmardelplata.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/servizi-elettorali/comites/elezioni-com-it-es-2026-2/come-partecipare-e-modalita-di-espressione-del-voto/" target="_blank" rel="noopener noreferrer">Consultar información oficial</a><a class="button button-secondary" href="https://www.nuevas-generaciones.com.ar/" target="_blank" rel="noopener noreferrer">Ver Nuevas Generaciones</a></div>
       </div>
     </section>
@@ -279,6 +301,7 @@
 
   <footer class="site-footer" id="contacto"><div class="container footer-grid"><div><a class="brand brand-footer" href="index.html"><img class="brand-image" src="assets/images/logo-nati-all-estero.png" alt="Emblema Nati all'estero"><span>Nati <em>all'estero</em></span></a><p>Nuestras raíces, nuestro futuro.</p></div><div><h2 class="footer-title">Enlaces</h2><a href="index.html">Inicio</a><a href="https://www.nuevas-generaciones.com.ar/" target="_blank" rel="noopener noreferrer">Nuevas Generaciones</a><a href="https://consmardelplata.esteri.it/it/" target="_blank" rel="noopener noreferrer">Consulado de Italia</a></div><div><h2 class="footer-title">Importante</h2><p>Las instrucciones oficiales prevalecen sobre cualquier resumen informativo de este sitio.</p><a class="social-link" href="https://www.instagram.com/natiallestero2026/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Nati all’estero (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@natiallestero2026</span></a></div></div><div class="container footer-bottom"><span>© 2026 Nati all’estero</span><span>COM.It.Es. 2026</span><span id="visit-counter" aria-live="polite"></span></div></footer>
   <script src="js/menu.js"></script>
+  <script src="js/guia-voto.js?v=1"></script>
   <script src="js/contador.js?v=20261031b"></script>
 </body>
 </html>
